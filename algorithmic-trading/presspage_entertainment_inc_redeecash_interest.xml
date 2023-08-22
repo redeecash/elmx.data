@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<algobot>
+  <personal>
+    <fullname>PRESSPAGE ENTERTAINMENT INC</fullname>
+    <phone>212-879-0758</phone>
+    <email>presspage.entertainment@gmail.com</email>
+    <website>https://presspage.info</website>
+    <linkedin></linkedin>
+  </personal>
+  <botinfo>
+    <name>RedeeCash Interest</name>
+    <description>THIS EXPERT ADVISOR (EA) IS FOR ACCOUNTS WHICH PAY OVERNIGHT INTEREST LIKE THE US-BASED OANDA ACCOUNT. TO MAXIMIZE EARNINGS, CHOOSE A COMMISSION-FREE, FIX SPREAD ACCOUNT. IF YOUR BROKER DOES NOT PAY OVERNIGHT INTEREST, THEN DO NOT USE THIS EA ON YOUR ACCOUNT!
+
+This Expert Advisor (EA) is like a high-yield savings account (EXCEPT YOUR ACCOUNT IS NOT FDIC-INSURED) because a trade will occur on currency pairs that pay(earn) overnight interest (when SWAPRATE_LONG and SWAPRATE_SHORT are positive). The entry and exit positions are based on the lookback period Lowest/Highest and Highest/Lowest prices for buy and sell orders respectively.</description>
+    <language>METAQUOTE</language>
+    <platform>MT4</platform>
+    <exchange>OANDA</exchange>
+    <download>https://www.mql5.com/en/market/product/85848?source=Site+Market+My+Products+Page#description</download>
+    <cost>free</cost>
+    <price>0.00</price>
+  </botinfo>
+  <techinfo>
+    <hosting>N/A</hosting>
+    <api>N/A</api>
+    <integration>N/A</integration>
+    <marketdata>METATRADER HISTORICAL</marketdata>
+  </techinfo>
+  <risk>
+    <mechanism>Only one trade opened at a time without stop loss. A take profit is set for 1000 pips. Only trades opened on ccy pairs that will earn the swap for the account as this expert advisor is designed to stay running on overnight trades and while a positive close is waiting, the balance increases daily when swap earnings are paid into the account.</mechanism>
+    <maxpertrade>up to 80%</maxpertrade>
+    <strategies>No stop loss, only a 1000 PIP take profit</strategies>
+  </risk>
+  <backtesting>
+    <period>N/A</period>
+    <performance>Not available</performance>
+  </backtesting>
+  <compliance>
+    <regulations>yes</regulations>
+    <measures>no</measures>
+    <details></details>
+  </compliance>
+  <trackrecord>
+    <totaltrading>20 years</totaltrading>
+    <livetrading>20 years</livetrading>
+    <summary></summary>
+  </trackrecord>
+  <references>
+    <one>
+      <fullname></fullname>
+      <title></title>
+      <company></company>
+      <phone></phone>
+      <email></email>
+    </one>
+    <two>
+      <fullname></fullname>
+      <title></title>
+      <company></company>
+      <phone></phone>
+      <email></email>
+    </two>
+  </references>
+
+</algobot>
