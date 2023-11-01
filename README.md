@@ -1,4 +1,4 @@
-# Data Repository for the EXEMPT LIQUIDITY MARKET EXCHANGE (ELMX)
+# Data Repository for the Non-reporting Entities
 
 If you are an issuer with an existing SEC exempt offering under regulation D, regulation A tier 1 or a non-reporting interstate offering, you can now provide quarterly and annual reporting to your investors and potential investors on a voluntarily basis.
 
