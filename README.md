@@ -11,3 +11,7 @@ Resales are subject to reporting requirements
 ## Resales of Exempt Offerings
 
 ![1710762184794](image/README/1710762184794.png)
+
+# Laws that Govern the Securities Industry
+
+See [https://www.sec.gov/about/about-securities-laws#secact1933](https://www.sec.gov/about/about-securities-laws#secact1933)
