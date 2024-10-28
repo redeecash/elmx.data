@@ -4,9 +4,13 @@ If you are an issuer with an existing SEC exempt offering under regulation D, re
 
 You will need an SEC issued CIK code and the SEC issued file number for each exempt offering, when applicable.
 
-Submit your annual and quarterly reports from your dashboard at [https://exemptliquiditymarket.exchange/](https://exemptliquiditymarket.exchange/).
-
 Resales are subject to reporting requirements
+
+## Report Generation
+
+A report generation application is provided in this repository for your convenience and the complated reports are then submitted through [https://portal.exemptliquiditymarket.exchange.](https://portal.exemptliquiditymarket.exchange.)
+
+![1730122296243](image/README/1730122296243.png)
 
 ## Resales of Exempt Offerings
 
@@ -42,8 +46,8 @@ In accordance with 78l(b)(1) the following minimum information is required from 
 
     (I) material contracts, not made in the ordinary course of business, which are to be executed in whole or in part at or after the filing of the application or which were made not more than two years before such filing, and every material patent or contract for a material patent right shall be deemed a material contract;
 
-    (J) **NOT REQUIRED BUT RECOMMENDED**. balance sheets for not more than the three preceding fiscal years, certified if required by the rules and regulations of the Commission by a registered public accounting firm;
+    (J)**NOT REQUIRED BUT RECOMMENDED**. balance sheets for not more than the three preceding fiscal years, certified if required by the rules and regulations of the Commission by a registered public accounting firm;
 
-    (K) **NOT REQUIRED BUT RECOMMENDED.** profit and loss statements for not more than the three preceding fiscal years, certified if required by the rules and regulations of the Commission by a registered public accounting firm; and
+    (K)**NOT REQUIRED BUT RECOMMENDED.** profit and loss statements for not more than the three preceding fiscal years, certified if required by the rules and regulations of the Commission by a registered public accounting firm; and
 
-    (L) **NOT REQUIRED BUT RECOMMENDED**. any further financial statements which the Commission may deem necessary or appropriate for the protection of investors.
+    (L)**NOT REQUIRED BUT RECOMMENDED**. any further financial statements which the Commission may deem necessary or appropriate for the protection of investors.
