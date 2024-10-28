@@ -1,6 +1,6 @@
 # Data Repository for the Non-reporting Entities
 
-If you are an issuer with an existing SEC exempt offering under regulation D, regulation A tier 1 or a non-reporting interstate offering, you can now provide quarterly and annual reporting to your investors and potential investors on a voluntarily basis without the need for an audit.
+If you are an issuer with an existing SEC exempt offering under regulation D, regulation A tier 1 or a non-reporting interstate offering, you can now provide quarterly and annual reporting to your investors and potential investors.
 
 You will need an SEC issued CIK code and the SEC issued file number for each exempt offering, when applicable.
 
@@ -11,6 +11,24 @@ Resales are subject to reporting requirements
 A report generation application is provided in this repository for your convenience and the complated reports are then submitted through [https://portal.exemptliquiditymarket.exchange.](https://portal.exemptliquiditymarket.exchange.)
 
 ![1730122296243](image/README/1730122296243.png)
+
+## Conflicts in Rules and Regulations with The Authority (aka US Code)
+
+As outlined in the *Administrative Procedure Act (APA)* (5 U.S.C. § 551 et seq.) and case law surrounding administrative agency authority. Specifically, the APA provides the rules and procedures agencies must follow, including the requirement that agency regulations not conflict with statutory authority, which is set forth in the U.S. Code or the Code of Federal Regulations (CFR).
+
+Here's a brief breakdown of relevant principles:
+
+1. **Statutory Authority Requirement**:
+
+   - Agencies cannot create rules that exceed their statutory authority. Under the APA, if a rule goes beyond what Congress authorized, it is invalid. This principle is often referenced through *Chevron deference*, which instructs courts to defer to agency interpretations of ambiguous statutes as long as they are reasonable (see *Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.*, 467 U.S. 837 (1984)).
+2. **Judicial Review of Agency Actions**:
+
+   - Under *5 U.S.C. § 706*, courts may set aside agency actions that are “arbitrary, capricious, an abuse of discretion, or otherwise not in accordance with law,” or “in excess of statutory jurisdiction, authority, or limitations.”
+3. **Regulations Conflicting with U.S. Code or CFR**:
+
+   - If an agency rule conflicts with its authorizing statute in the U.S. Code, or if a conflict arises within the CFR due to unauthorized rule-making, the rule is invalidated upon judicial review. This can be challenged in court, and the reviewing court may strike down rules or regulations that conflict with federal statutes or exceed agency authority.
+
+These provisions ensure that agency rules align with statutory authority without conflicting with the U.S. Code or other regulatory provisions.
 
 ## Resales of Exempt Offerings
 
