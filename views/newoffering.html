@@ -12,6 +12,30 @@
         <!-- MAIN PAGE -->
         <div id="main-page" class="w3-container">
             <br/><br/><br/>
+            <div class="w3-card w3-padding w3-margin">
+                <form>
+                <div class="w3-section">
+                    <label>Organization Details</label>
+                    <textarea name="organizationDetails" class="w3-input w3-border"></textarea>
+                </div>
+                <div class="w3-section">
+                    <label>Securities Information</label>
+                    <textarea name="securitiesInfo" class="w3-input w3-border"></textarea>
+                </div>
+                <div class="w3-section">
+                    <label>Offering Terms</label>
+                    <textarea name="offeringTerms" class="w3-input w3-border"></textarea>
+                </div>
+                <div class="w3-section">
+                    <label>Directors Information</label>
+                    <textarea name="directorsInfo" class="w3-input w3-border"></textarea>
+                </div>
+                <div class="w3-section">
+                    <label>Remuneration</label>
+                    <textarea name="remuneration" class="w3-input w3-border"></textarea>
+                </div>
+                </form>
+            </div>
             <button id="create-submission-file" class="w3-button w3-block w3-black">Submit</button>
             <br/>
             <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
@@ -37,8 +61,17 @@
                     document.getElementById("year").innerHTML = year;
                 }
             }
+            function handleSubmit() {
+                const formData = {};
+                document.querySelectorAll("textarea").forEach((textarea) => {
+                    formData[textarea.name] = textarea.value;
+                });
+                console.log("Submitted Data:", formData);
+                alert("Application Submitted Successfully");
+            }
             document.getElementById("create-submission-file").addEventListener("click", function(e) {
                 e.preventDefault();
+                handleSubmit();
             });
             document.getElementById("download-submission-file").addEventListener("click",function(e){
                 e.preventDefault();
