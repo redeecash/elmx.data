@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Broker-Dealers Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <h2 class="w3-container w3-yellow header">Broker-Dealers Registration</h2>
+        <!-- MAIN PAGE -->
+        <div id="main-page" class="w3-container">
+            <br/><br/><br/>
+            <fieldset>
+                <legend>Company Information</legend>
+                Company Name
+                Legal Entity Type
+                Incorporation Date
+                Registered Address
+                City
+                State/Province
+                Postal Code 
+                Country
+                Phone
+                EMail
+                Company Website
+            </fieldset>
+            FINRA Registration
+            Key Personnel
+            Blockchain Education
+            Compliance Policies and Procedures
+            <select id="" class="w3-input w3-block" plaecholder="Do you have documented compliance policies and procedures in place?">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            Business Activities
+            <textarea class="w3-input w3-block" placeholder="Describe the nature of your broker-dealer business activities and the financial instruments you deal with"></textarea>
+            <fieldset>
+                <legend>Capital and Financial Information</legend>
+                Total Capitalization
+                Audited Financial Statements
+                Capital Adequacy Ratios
+                Liquidity Management Procedures
+            </fieldset>
+            Risk Managemen
+            <textarea class="w3-input w3-block" placeholder=""></textarea>
+            Client Protection Measures
+            <textarea class="w3-input w3-block" placeholder=""></textarea>
+            <fieldset>
+                Regulatory Compliance
+                <select id="" class="w3-input w3-block" placeholder="Have you ever been subject to any regulatory investigations, penalties, or legal actions related to your broker-dealer activities?">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+                if Yes, please provide details
+                <textarea class="w3-input w3-block" placeholder=""></textarea>    
+            </fieldset>
+            Additional Information
+            <textarea class="w3-input w3-block" placeholder=""></textarea>
+            <button id="create-submission-file" class="w3-button w3-block w3-black">Submit</button>
+            <br/>
+            <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
+            <br/>
+            <a href="./index.html" class="w3-button w3-block w3-orange">Back</a>
+            <br/><br/><br/>
+        </div>
+        <!-- FOOTER -->
+        <h5 class="w3-container w3-yellow footer">
+            &copy; <span id="year"></span> by <a href="https://presspage-entertainment.biz" target="_system" style="text-decoration: none">PressPage Entertainment Inc</a> DBA <a href="https://redeecas.presspage-entertainment.biz" target="_system" style="text-decoration: none">RedeeCash</a>. All rights reserved.
+            &nbsp;<span id="version" class="w3-tiny"></span>
+        </h5>                       
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("version").innerHTML = 'Version ' + localStorage.getItem('version');
+
+                var year = new Date().getFullYear();
+                if (year > 2022) {
+                    document.getElementById("year").innerHTML = "2022-" + year;
+                } else {
+                    document.getElementById("year").innerHTML = year;
+                }
+            }
+            document.getElementById("create-submission-file").addEventListener("click", function(e) {
+                e.preventDefault();
+            });
+            document.getElementById("download-submission-file").addEventListener("click",function(e){
+                e.preventDefault();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8-K Filing for Exempt Liquidity Market Exchange &amp; SEC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <h2 class="w3-container w3-yellow header">8-K Filing for Exempt Liquidity Market Exchange &amp; SEC</h2>
+        <!-- MAIN PAGE -->
+        <div id="main-page" class="w3-container">
+            <br/><br/><br/><br/>
+            <fieldset>
+                <legend>Company</legend>
+                <label>Name</label>
+                <input type="text" id="company-name" class="w3-input w3-block" value="" />
+                <label>Jurisdiction</label>
+                <input type="text" id="company-jurisdiction" class="w3-input w3-block" value="" />
+                <label>Address</label>
+                <input type="text" id="company-address" class="w3-input w3-block" value="" />
+                <label>City and State</label>
+                <input type="text" id="company-citystate" class="w3-input w3-block" value="" />
+                <label>Zip Code</label>
+                <input type="text" id="company-zipcode" class="w3-input w3-block" pattern="[0-9]{5}-[0-9]{4}" value="" placeholder="User format of #####-####" />
+                <label>Phone Number</label>
+                <input type="text" id="company-phonenumber" class="w3-input w3-block" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" value="" placeholder="Use format of (###) ###-####"/>
+                <fieldset>
+                    <legend>Former Address</legend>
+                    <label for="company-former-address">Address</label>
+                    <input type="text" id="company-former-address" class="w3-input w3-block" value="" />
+                    <label for="company-former-citystate">City and State</label>
+                    <input type="text" id="company-former-citystate" class="w3-input w3-block" value="" />
+                    <label for="company-former-zipcode">Zip Code</label>
+                    <input type="text" id="company-former-zipcode" class="w3-input w3-block" pattern="[0-9]{5}-[0-9]{4}" value="" placeholder="User format of #####-####" />
+                </fieldset>
+                <label for="company-tin">IRS Taxpayer Number</label>
+                <input type="text" id="company-tin" class="w3-input w3-block" pattern="[0-9]{2}-[0-9]{7}" value="" pattern="Use format of ##-#######" />
+                <label for="cik">Central Index Key (CIK)</label>
+                <input type="text" class="w3-input w3-block" id="cik" value="" />
+                <label for="company-filenumber">SEC File Number</label>
+                <input type="text" id="company-filenumber" class="w3-input w3-block" value="NOT ASSIGNED" placeholder="Use NOT ASSIGNED or the format of ###-######" />
+                <label for="company-authorized-signer">Authorized Signer</label>
+                <input type="text" id="company-authorized-signer" class="w3-input w3-block" value="" />
+                <label for="company-authorized-signer-title">Authorized Signer's Title</label>
+                <input type="text" id="company-authorized-signer-title" class="w3-input w3-block" value="" />
+            </fieldset>
+            <fieldset>
+                <legend>Report Dates</legend>
+                <label for="report-date">Date of Report</label>
+                <input type="date" id="report-date" class="w3-input w3-block" value="" />
+                <label for="earliest-event-date">Date of Earliest Event Reported</label>
+                <input type="date" id="earliest-event-date" class="w3-input w3-block" value="" />
+            </fieldset>
+            <fieldset>
+                <legend>Provisions</legend>
+                <input type="checkbox" id="rule425" />Written communications pursuant to <a href="https://www.investopedia.com/terms/s/sec-form-425.asp" target="_blank">Rule 425</a> under the Securities Act (<a href="https://www.law.cornell.edu/cfr/text/17/230.425" target="_blank">17 CFR §230.425</a>)<br/>
+                <input type="checkbox" id="rule14a12" />Soliciting material pursuant to <a href="https://lawblogs.uc.edu/sld/the-deskbook-table-of-contents/the-securities-acts-statutory-law/the-securities-exchange-act-of-1934-15-usc-%c2%a7-78a-et-seq/general-rules-and-regulations-promulgated-under-the-securities-exchange-act-of-1934-17-cfr-part-240/regulation-14a-solicitations-of-proxies-rules-14a-1-to-14b-2/" target="_blank">Rule 14a-12</a> under the Exchange Act (<a href="https://www.law.cornell.edu/cfr/text/17/240.14a-12" target="_blank">17 CFR §240.14a-12</a>)<br/>
+                <input type="checkbox" id="rule14d2" />Pre-commencement communications pursuant to <a href="https://scholarlycommons.law.wlu.edu/wlulr/vol38/iss3/13" target="_blank">Rule 14d-2(b)</a> under the Exchange Act (<a href="https://www.law.cornell.edu/cfr/text/17/240.14d-2" target="_blank">17 CFR §240.14d-2(b)</a>)<br/>
+                <input type="checkbox" id="rule13e4" />Pre-commencement communications pursuant to <a href="https://www.investopedia.com/terms/s/schedule13e-4.asp" target="_blank">Rule 13e-4(c)</a> under the Exchange Act (<a href="https://www.law.cornell.edu/cfr/text/17/240.13e-4" target="_blank">17 CFR §240.13e-4(c)</a>)<br/>
+                <input type="checkbox" id="emerging" /><a href="https://www.sec.gov/smallbusiness/goingpublic/EGC" target="_blank">Emerging growth company</a><br/>
+                <input type="checkbox" id="emerging-extra" disabled />If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act<br/>
+            </fieldset>
+            <fieldset>
+                <legend title="Check each box for the item to report changes?">Changes Reported</legend>
+                <b>Section 1 - Registrant’s Business and Operations</b><br/>
+                <input type="checkbox" id="item1.01" title="Entry into a Material Definitive Agreement." data-item="1.01" />Item 1.01 Entry into a Material Definitive Agreement.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item1.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item1.02" title="Termination of a Material Definitive Agreement." data-item="1.02" />Item 1.02 Termination of a Material Definitive Agreement.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item1.02-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item1.03" title="Bankruptcy or Receivership." data-item="1.03" />Item 1.03 Bankruptcy or Receivership.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item1.03-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <b>Section 2 - Financial Information</b><br/>
+                <input type="checkbox" id="item2.01" title="Completion of Acquisition or Disposition of Assets" data-item="2.01" />Item 2.01 Completion of Acquisition or Disposition of Assets<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item2.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item2.02" title="Results of Operations and Financial Condition." data-item="2.02" />Item 2.02 Results of Operations and Financial Condition.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item2.02-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item2.03" title="Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant" data-item="2.03" />Item 2.03 Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item2.03-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item2.04" title="Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement" data-item="2.04" />Item 2.04 Triggering Events That Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item2.04-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item2.05" title="Costs Associated with Exit or Disposal Activities" data-item="2.05" />Item 2.05 Costs Associated with Exit or Disposal Activities<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item2.05-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item2.06" title="Material Impairments" data-item="2.06" />Item 2.06 Material Impairments<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item2.06-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <b>Section 3 - Securities and Trading Markets</b><br/>
+                <input type="checkbox" id="item3.01" title="Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing" data-item="3.01" />Item 3.01 Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item3.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item3.02" title="Unregistered Sales of Equity Securities" data-item="3.02" />Item 3.02 Unregistered Sales of Equity Securities<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item3.02-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item3.03" title="Material Modification to Rights of Security Holders." data-item="3.03" />Item 3.03 Material Modification to Rights of Security Holders.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item3.03-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <b>Section 4 - Matters Related to Accountants and Financial Statements</b><br/>
+                <input type="checkbox" id="item4.01" title="Changes in Registrant’s Certifying Accountant." data-item="4.01" />Item 4.01 Changes in Registrant’s Certifying Accountant.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item4.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item4.02" title="Non-Reliance on Previously Issued Financial Statements or a Related Audit Report or Completed Interim Review"  data-item="4.02"/>Item 4.02 Non-Reliance on Previously Issued Financial Statements or a Related Audit Report or Completed Interim Review<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item4.02-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <b>Section 5 - Corporate Governance and Management</b><br/>
+                <input type="checkbox" id="item5.01" title="Changes in Control of Registrant" data-item="5.01" />Item 5.01 Changes in Control of Registrant<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item5.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item5.02" title="Departure of Directors or Principal Officers; Election of Directors; Appointment of Principal Officers" data-item="5.02" />Item 5.02 Departure of Directors or Principal Officers; Election of Directors; Appointment of Principal Officers<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item5.02-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item5.03" title="Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year" data-item="5.03" />Item 5.03 Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item5.03-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item5.04" title="Temporary Suspension of Trading Under Registrant’s Employee Benefit Plans" data-item="5.04" />Item 5.04 Temporary Suspension of Trading Under Registrant’s Employee Benefit Plans<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item5.04-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <input type="checkbox" id="item5.05" title="Amendments to the Registrant’s Code of Ethics, or Waiver of a Provision of the Code of Ethics." data-item="5.05" />Item 5.05 Amendments to the Registrant’s Code of Ethics, or Waiver of a Provision of the Code of Ethics.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item5.05-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <b>Section 7 - Regulation FD</b><br/>
+                <input type="checkbox" id="item7.01" title="Regulation FD Disclosure." data-item="7.01" />Item 7.01 Regulation FD Disclosure.<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item7.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <b>Section 8 - Other Events</b><br/>
+                <input type="checkbox" id="item8.01" title="Other Events" data-item="8.01" />Item 8.01 Other Events<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item8.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+                <b>Section 9 - Financial Statements and Exhibits</b><br/>
+                <input type="checkbox" id="item9.01" title="Financial Statements and Exhibit" data-item="9.01" />Item 9.01 Financial Statements and Exhibit<br/>
+                <textarea class="w3-input w3-block w3-pale-yellow" rows="5" id="item9.01-info" style="display: none;" placeholder="Describe the event"></textarea>
+            </fieldset>
+            <button id="create-report" class="w3-button w3-block w3-black">Create Report</button>
+            <br/>
+            <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
+            <br/>
+            <a href="./index.html" class="w3-button w3-block w3-orange">Back</a>
+            <br/><br/><br/>
+        </div>
+        <!-- FOOTER -->
+        <h5 class="w3-container w3-yellow footer">
+            &copy; <span id="year"></span> by <a href="https://presspage-entertainment.biz" target="_system" style="text-decoration: none">PressPage Entertainment Inc</a> DBA <a href="https://redeecas.presspage-entertainment.biz" target="_system" style="text-decoration: none">RedeeCash</a>. All rights reserved.
+            &nbsp;<span id="version" class="w3-tiny"></span>
+        </h5>                       
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("version").innerHTML = 'Version ' + localStorage.getItem('version');
+
+                var year = new Date().getFullYear();
+                if (year > 2022) {
+                    document.getElementById("year").innerHTML = "2022-" + year;
+                } else {
+                    document.getElementById("year").innerHTML = year;
+                }
+            }
+
+            document.getElementById("create-report").addEventListener("click", function(e){
+                var company_name = document.getElementById("company-name").value;
+                var jurisdiction = document.getElementById("company-jurisdiction").value;
+                var company_tin = document.getElementById("company-tin").value;
+                var company_address = document.getElementById("company-address").value;
+                var company_city_state = document.getElementById("company-citystate").value;
+                var company_zipcode = document.getElementById("company-zipcode").value;
+                var company_authorized_signer = document.getElementById("company-authorized-signer").value;
+                var company_authorized_signer_title = document.getElementById("company-authorized-signer-title").value;
+
+                var file_number = document.getElementById("company-filenumber").value;
+                var cik = document.getElementById("cik").value;
+                var dom_report_date = document.getElementById("report-date").value;
+
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var _report_date = new Date(dom_report_date);
+                var report_date = months[_report_date.getMonth()] + ' ' + _report_date.getDate() + ', ' + _report_date.getFullYear(); 
+
+
+                var submission = {
+                    redeecashSubmission: {
+                        form: "8-K",
+                        company: {
+                            registrant: company_name,
+                            jurisdiction: jurisdiction,
+                            address: company_address,
+                            cityState: company_city_state,
+                            zipcode: company_zipcode,
+                            phone: document.getElementById("company-phonenumber").value,
+                            fomer: {
+                                address: document.getElementById("company-former-address").value,
+                                cityState: document.getElementById("company-former-citystate").value,
+                                zipcode: document.getElementById("company-former-zipcode").value,
+                            },
+                            fein: company_tin,
+                            cik: cik,
+                            filenumber: file_number,
+                            authorized: {
+                                signer: company_authorized_signer,
+                                title: company_authorized_signer_title,
+                            }
+                        },
+                        dates: {
+                            report: report_date,
+                            earliest: document.getElementById("earliest-event-date").value
+                        },
+                        provisions: {
+                            rule425: document.getElementById("rule425").checked ? "YES" : "NO",
+                            rule14a12: document.getElementById("rule14a12").checked ? "YES" : "NO",
+                            rule14d2: document.getElementById("rule14d2").checked ? "YES" : "NO",
+                            rule13e4: document.getElementById("rule13e4").checked ? "YES" : "NO",
+                            egc: document.getElementById("emerging").checked ? "YES" : "NO",
+                            extebdedTransistionPeriod: document.getElementById("emerging-extra").checked ? "YES" : "NO",
+                        },
+                        changes: {
+                            section1: {
+                                items: {
+                                    item1: document.getElementById("item1.01").checked ? document.getElementById("item1.01-info").value : "",
+                                    item2: document.getElementById("item1.02").checked ? document.getElementById("item1.02-info").value : "",
+                                    item3: document.getElementById("item1.03").checked ? document.getElementById("item1.03-info").value : "",
+                                }
+                            },
+                            section2: {
+                                items: {
+                                    item1: document.getElementById("item2.01").checked ? document.getElementById("item2.01-info").value : "",
+                                    item2: document.getElementById("item2.02").checked ? document.getElementById("item2.02-info").value : "",
+                                    item3: document.getElementById("item2.03").checked ? document.getElementById("item2.03-info").value : "",
+                                    item4: document.getElementById("item2.04").checked ? document.getElementById("item2.04-info").value : "",
+                                    item5: document.getElementById("item2.05").checked ? document.getElementById("item2.05-info").value : "",
+                                    item6: document.getElementById("item2.06").checked ? document.getElementById("item2.06-info").value : "",
+                                }
+                            },
+                            section3: {
+                                items: {
+                                    item1: document.getElementById("item3.01").checked ? document.getElementById("item3.01-info").value : "",
+                                    item2: document.getElementById("item3.02").checked ? document.getElementById("item3.02-info").value : "",
+                                    item3: document.getElementById("item3.03").checked ? document.getElementById("item3.03-info").value : "",
+                                }
+                            },
+                            section4: {
+                                items: {
+                                    item1: document.getElementById("item4.01").checked ? document.getElementById("item4.01-info").value : "",
+                                    item2: document.getElementById("item4.02").checked ? document.getElementById("item4.02-info").value : "",
+                                }
+                            },
+                            section5: {
+                                items: {
+                                    item1: document.getElementById("item5.01").checked ? document.getElementById("item5.01-info").value : "",
+                                    item1: document.getElementById("item5.02").checked ? document.getElementById("item5.02-info").value : "",
+                                    item1: document.getElementById("item5.03").checked ? document.getElementById("item5.03-info").value : "",
+                                    item1: document.getElementById("item5.04").checked ? document.getElementById("item5.04-info").value : "",
+                                    item1: document.getElementById("item5.05").checked ? document.getElementById("item5.05-info").value : "",
+                                }
+                            },
+                            section7: {
+                                items: {
+                                    item1: document.getElementById("item7.01").checked ? document.getElementById("item7.01-info").value : "",
+                                }
+                            },
+                            section8: {
+                                items: {
+                                    item1: document.getElementById("item8.01").checked ? document.getElementById("item8.01-info").value : "",
+                                }
+                            },
+                            section9: {
+                                items: {
+                                    item1: document.getElementById("item9.01").checked ? document.getElementById("item9.01-info").value : "",
+                                }
+                            }
+                        },
+                    }
+                };
+
+                var params = {
+                    form: "8k",
+                    cik: cik,
+                    date: new Date(report_date).getTime(),
+                    json: JSON.stringify(submission)
+                };
+
+                SendIPC("create_submission_xml",params,function(channel,event,result){
+                    console.log(result);
+                })
+                
+            });
+
+            document.getElementById("emerging").addEventListener("change", function(e){
+                if (this.checked) {
+                    document.getElementById("emerging-extra").removeAttribute("disabled");
+                } else {
+                    document.getElementById("emerging-extra").setAttribute("disabled","disabled");
+                }
+            });
+
+            document.getElementById("item1.01").addEventListener("change", function(e) {
+                document.getElementById("item1.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item1.02").addEventListener("change", function(e) {
+                document.getElementById("item1.02-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item1.03").addEventListener("change", function(e) {
+                document.getElementById("item1.03-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item2.01").addEventListener("change", function(e) {
+                document.getElementById("item2.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item2.02").addEventListener("change", function(e) {
+                document.getElementById("item2.02-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item2.03").addEventListener("change", function(e) {
+                document.getElementById("item2.03-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item2.04").addEventListener("change", function(e) {
+                document.getElementById("item2.04-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item2.05").addEventListener("change", function(e) {
+                document.getElementById("item2.05-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item2.06").addEventListener("change", function(e) {
+                document.getElementById("item2.06-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item3.01").addEventListener("change", function(e) {
+                document.getElementById("item3.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item3.02").addEventListener("change", function(e) {
+                document.getElementById("item3.02-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item3.03").addEventListener("change", function(e) {
+                document.getElementById("item3.03-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item4.01").addEventListener("change", function(e) {
+                document.getElementById("item4.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item4.02").addEventListener("change", function(e) {
+                document.getElementById("item4.02-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item5.01").addEventListener("change", function(e) {
+                document.getElementById("item5.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item5.02").addEventListener("change", function(e) {
+                document.getElementById("item5.02-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item5.03").addEventListener("change", function(e) {
+                document.getElementById("item5.03-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item5.04").addEventListener("change", function(e) {
+                document.getElementById("item5.04-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item5.05").addEventListener("change", function(e) {
+                document.getElementById("item5.05-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item7.01").addEventListener("change", function(e) {
+                document.getElementById("item7.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item8.01").addEventListener("change", function(e) {
+                document.getElementById("item8.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("item9.01").addEventListener("change", function(e) {
+                document.getElementById("item9.01-info").style.display = (this.checked ? "block" : "none");
+            });
+            document.getElementById("download-submission-file").addEventListener("click",function(e){
+                e.preventDefault();
+
+                var company_name = document.getElementById("company-name").value;
+                var jurisdiction = document.getElementById("company-jurisdiction").value;
+                var company_tin = document.getElementById("company-tin").value;
+                var company_address = document.getElementById("company-address").value;
+                var company_city_state = document.getElementById("company-citystate").value;
+                var company_zipcode = document.getElementById("company-zipcode").value;
+                var company_authorized_signer = document.getElementById("company-authorized-signer").value;
+                var company_authorized_signer_title = document.getElementById("company-authorized-signer-title").value;
+
+                var file_number = document.getElementById("company-filenumber").value;
+                var cik = document.getElementById("cik").value;
+                var dom_report_date = document.getElementById("report-date").value;
+
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var _report_date = new Date(dom_report_date);
+                var report_date = months[_report_date.getMonth()] + ' ' + _report_date.getDate() + ', ' + _report_date.getFullYear(); 
+
+
+                var info = {
+                    redeecashSubmission: {
+                        form: "8-K",
+                        company: {
+                            registrant: company_name,
+                            jurisdiction: jurisdiction,
+                            address: company_address,
+                            cityState: company_city_state,
+                            zipcode: company_zipcode,
+                            phone: document.getElementById("company-phonenumber").value,
+                            fomer: {
+                                address: document.getElementById("company-former-address").value,
+                                cityState: document.getElementById("company-former-citystate").value,
+                                zipcode: document.getElementById("company-former-zipcode").value,
+                            },
+                            fein: company_tin,
+                            cik: cik,
+                            filenumber: file_number,
+                            authorized: {
+                                signer: company_authorized_signer,
+                                title: company_authorized_signer_title,
+                            }
+                        },
+                        dates: {
+                            report: report_date,
+                            earliest: document.getElementById("earliest-event-date").value
+                        },
+                        provisions: {
+                            rule425: document.getElementById("rule425").checked ? "YES" : "NO",
+                            rule14a12: document.getElementById("rule14a12").checked ? "YES" : "NO",
+                            rule14d2: document.getElementById("rule14d2").checked ? "YES" : "NO",
+                            rule13e4: document.getElementById("rule13e4").checked ? "YES" : "NO",
+                            egc: document.getElementById("emerging").checked ? "YES" : "NO",
+                            extebdedTransistionPeriod: document.getElementById("emerging-extra").checked ? "YES" : "NO",
+                        },
+                        changes: {
+                            section1: {
+                                items: {
+                                    item1: document.getElementById("item1.01").checked ? document.getElementById("item1.01-info").value : "",
+                                    item2: document.getElementById("item1.02").checked ? document.getElementById("item1.02-info").value : "",
+                                    item3: document.getElementById("item1.03").checked ? document.getElementById("item1.03-info").value : "",
+                                }
+                            },
+                            section2: {
+                                items: {
+                                    item1: document.getElementById("item2.01").checked ? document.getElementById("item2.01-info").value : "",
+                                    item2: document.getElementById("item2.02").checked ? document.getElementById("item2.02-info").value : "",
+                                    item3: document.getElementById("item2.03").checked ? document.getElementById("item2.03-info").value : "",
+                                    item4: document.getElementById("item2.04").checked ? document.getElementById("item2.04-info").value : "",
+                                    item5: document.getElementById("item2.05").checked ? document.getElementById("item2.05-info").value : "",
+                                    item6: document.getElementById("item2.06").checked ? document.getElementById("item2.06-info").value : "",
+                                }
+                            },
+                            section3: {
+                                items: {
+                                    item1: document.getElementById("item3.01").checked ? document.getElementById("item3.01-info").value : "",
+                                    item2: document.getElementById("item3.02").checked ? document.getElementById("item3.02-info").value : "",
+                                    item3: document.getElementById("item3.03").checked ? document.getElementById("item3.03-info").value : "",
+                                }
+                            },
+                            section4: {
+                                items: {
+                                    item1: document.getElementById("item4.01").checked ? document.getElementById("item4.01-info").value : "",
+                                    item2: document.getElementById("item4.02").checked ? document.getElementById("item4.02-info").value : "",
+                                }
+                            },
+                            section5: {
+                                items: {
+                                    item1: document.getElementById("item5.01").checked ? document.getElementById("item5.01-info").value : "",
+                                    item1: document.getElementById("item5.02").checked ? document.getElementById("item5.02-info").value : "",
+                                    item1: document.getElementById("item5.03").checked ? document.getElementById("item5.03-info").value : "",
+                                    item1: document.getElementById("item5.04").checked ? document.getElementById("item5.04-info").value : "",
+                                    item1: document.getElementById("item5.05").checked ? document.getElementById("item5.05-info").value : "",
+                                }
+                            },
+                            section7: {
+                                items: {
+                                    item1: document.getElementById("item7.01").checked ? document.getElementById("item7.01-info").value : "",
+                                }
+                            },
+                            section8: {
+                                items: {
+                                    item1: document.getElementById("item8.01").checked ? document.getElementById("item8.01-info").value : "",
+                                }
+                            },
+                            section9: {
+                                items: {
+                                    item1: document.getElementById("item9.01").checked ? document.getElementById("item9.01-info").value : "",
+                                }
+                            }
+                        },
+                    }
+                };
+
+                var xmlString = `<?xml version="1.0" encoding="UTF-8"?>\n<form8k>\n${convertToXml(info, '  ')}\n</form8k>`;
+                const filedate = new Date(dom_report_date).getTime();
+                const filename = `${cik}_${file_number}_${filedate}_8k.xml`;
+                download(xmlString,filename);
+            })
+        </script>
+    </body>
+</html>

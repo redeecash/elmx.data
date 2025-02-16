@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Firm Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <h2 class="w3-container w3-yellow header">New Firm Registration</h2>
+        <!-- MAIN PAGE -->
+        <div id="main-page" class="w3-container">
+            <br/><br/><br/>
+            <label for="firm-name">Name</label>
+            <input type="text" id="firm-name" class="w3-input w3-block" value="" />
+            <label for="firm-address">Address</label>
+            <input type="text" id="firm-address1" title="address line one" class="w3-input w3-block" value="" />
+            <input type="text" id="firm-address2" title="address line two" class="w3-input w3-block" value="" />
+            <label for="firm-city">City</label>
+            <input type="text" id="firm-city" class="w3-input w3-block" value="" />
+            <label for="firm-state">State or Province</label>
+            <input type="text" id="firm-state" class="w3-input w3-block" value="" />
+            <label for="firm-zipcode">Postal Code</label>
+            <input type="text" id="firm-zipcode" class="w3-input w3-block" value="" />
+            <label for="firm-country">Country</label>
+            <input type="text" id="firm-country" class="w3-input w3-block" value="" />
+            <label for="firm-contact">Contact</label>
+            <input type="text" id="firm-contact" class="w3-input w3-block" value="" />
+            <label for="firm-contact-phone">Phone</label>
+            <input type="text" id="firm-contact-phone" class="w3-input w3-block" value="" />
+            <label for="firm-contact-email">EMail</label>
+            <input type="email" id="firm-contact-email" class="w3-input w3-block" value="" />
+            <label for="firm-website">Website</label>
+            <input type="url" id="firm-website" class="w3-input w3-block" value="" />
+            <label for="firm-wallet">Cryptocurrency Wallet Address</label>
+            <input type="text" id="firm-wallet" class="w3-input w3-block" value="" />
+            <button id="create-submission-file" class="w3-button w3-block w3-black">Submit</button>
+            <br/>
+            <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
+            <br/>
+            <a href="./index.html" class="w3-button w3-block w3-orange">Back</a>
+            <br/><br/><br/>
+        </div>
+        <!-- FOOTER -->
+        <h5 class="w3-container w3-yellow footer">
+            &copy; <span id="year"></span> by <a href="https://presspage-entertainment.biz" target="_system" style="text-decoration: none">PressPage Entertainment Inc</a> DBA <a href="https://redeecas.presspage-entertainment.biz" target="_system" style="text-decoration: none">RedeeCash</a>. All rights reserved.
+            &nbsp;<span id="version" class="w3-tiny"></span>
+        </h5>                       
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("version").innerHTML = 'Version ' + localStorage.getItem('version');
+
+                var year = new Date().getFullYear();
+                if (year > 2022) {
+                    document.getElementById("year").innerHTML = "2022-" + year;
+                } else {
+                    document.getElementById("year").innerHTML = year;
+                }
+            }
+            document.getElementById("create-submission-file").addEventListener("click", function(e) {
+                const info = {
+                    name: document.getElementById("firm-name").value,
+                    address1: document.getElementById("firm-address1").value,
+                    address2: document.getElementById("firm-address2").value,
+                    city: document.getElementById("firm-city").value,
+                    state: document.getElementById("firm-state").value,
+                    zipcode: document.getElementById("firm-zipcode").value,
+                    country: document.getElementById("firm-country").value,
+                    contact: document.getElementById("firm-contact").value,
+                    phone: document.getElementById("firm-contact-phone").value,
+                    email: document.getElementById("firm-contact-email").value,
+                    website: document.getElementById("firm-website").value,
+                    wallet: document.getElementById("firm-wallet").value,
+                }
+
+                const base64 = btoa(JSON.stringify(info));
+                const base64Name = btoa(document.getElementById("firm-contact-email").value);
+
+                const mailto = `mailto:presspage.entertainment@gmail.com?subject='New Firm Registration:${document.getElementById("firm-contact-email").value}'&body=${base64}`;
+                const win = window.open(mailto);
+                win.close();
+            })
+            document.getElementById("download-submission-file").addEventListener("click",function(e){
+                e.preventDefault();
+
+                const info = {
+                    name: document.getElementById("firm-name").value,
+                    address1: document.getElementById("firm-address1").value,
+                    address2: document.getElementById("firm-address2").value,
+                    city: document.getElementById("firm-city").value,
+                    state: document.getElementById("firm-state").value,
+                    zipcode: document.getElementById("firm-zipcode").value,
+                    country: document.getElementById("firm-country").value,
+                    contact: document.getElementById("firm-contact").value,
+                    phone: document.getElementById("firm-contact-phone").value,
+                    email: document.getElementById("firm-contact-email").value,
+                    website: document.getElementById("firm-website").value,
+                    wallet: document.getElementById("firm-wallet").value,
+                }
+
+
+                var xmlString = `<?xml version="1.0" encoding="UTF-8"?>\n<firm>\n${convertToXml(info, '  ')}\n</firm>`;
+                const personalName = document.getElementById("firm-name").value.toLowerCase().replace(/ /g, "_");
+                const filename = `${personalName}_firm.xml`;
+                download(xmlString,filename);
+            })
+
+        </script>
+    </body>
+</html>

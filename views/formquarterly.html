@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quarterly Report for Exempt Liquidity Market Exchange</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <h2 class="w3-container w3-yellow header">Quarterly Report for Exempt Liquidity Market Exchange</h2>
+        <!-- MAIN PAGE -->
+        <div id="main-page" class="w3-container">
+            <br/><br/><br/>
+            <label for="regulation">Regulation</label>
+            <input type="text" class="w3-input w3-block" id="regulation" value="" />
+            <label for="rule">Rule</label>
+            <input type="text" class="w3-input w3-block" id="rule" value="" />
+            <label for="datefrom">Beginning Date</label>
+            <input type="date" class="w3-input w3-block" id="datefrom" value="" />
+            <label for="dateto">Ending Date</label>
+            <input type="date" class="w3-input w3-block" id="dateto" value="" />
+            <label for="amendment">Amendment</label>
+            <select class="w3-input w3-block" id="amendment">
+                <option vallue="no">No</option>
+                <option vallue="yes">Yes</option>
+            </select>
+            <span style="display:none;" id="amendement_no_meta">
+                <label for="amendment_no">Amendment Number</label>
+                <input type="number" steps="any" id="amendment_no" class="w3-input w3-block" value="" />
+            </span>
+            <label for="cik">Central Index Key (CIK)</label>
+            <input type="text" class="w3-input w3-block" id="cik" value="" />
+            <label for="secfilenumber">SEC File Number</label>
+            <input type="text" class="w3-input w3-block" id="secfilenumber" value="" />
+            <label for="registrant">Exact Name of Registrant</label>
+            <input type="text" class="w3-input w3-block" id="registrant" value="" />
+            <label for="jurisdiction">State or other Juisdiction</label>
+            <input type="text" class="w3-input w3-block" id="jurisdiction" value="" />
+            <label for="fein">IRS Tax Identification Number</label>
+            <input type="text" class="w3-input w3-block" id="fein" value="" />
+            <label for="address">Address of Principal Office</label>
+            <input type="text" class="w3-input w3-block" id="address" value="" />
+            <label for="zipcode">Zip Code</label>
+            <input type="text" class="w3-input w3-block" id="zipcode" value="" />
+            <label for="phone">Telephone</label>
+            <input type="text" class="w3-input w3-block" id="phone" value="" />
+            <fieldset>
+                <label for="former-name">Former Name</label>
+                <input type="text" class="w3-input w3-block" id="former-name" value="" />
+                <label for="former-address">Former Address</label>
+                <input type="text" class="w3-input w3-block" id="former-address" value="" />
+                <label for="former-fiscalyear">Former Fiscal Year</label>
+                <input type="text" class="w3-input w3-block" id="former-fiscalyear" value="" />
+            </fieldset>
+            <fieldset>
+                <legend>Exempt Secrities</legend>
+                <table class="w3-table">
+                    <tr>
+                        <th>Title of each class</th>
+                        <th>Trading Symbol</th>
+                        <th>Name of each exchange on which registered?</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="exemptsecrity[]" class="w3-input" value=""/></td>
+                        <td><input type="text" id="tradingsymbol[]" class="w3-input" value=""/></td>
+                        <td><input type="text" id="exchange[]" class="w3-input" value="" placeholder="e.g., Exempt Liquidity Market Exchange"/></td>
+                    </tr>
+                </table>
+                <button class="w3-button w3-block w3-green" id="add-security">Add Security</button>
+            </fieldset>
+            <label for="shellcompany">Shell Company</label>
+            <select id="shellcompany" class="w3-input w3-block">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <fieldset>
+                <legend>PART I - FINANCIAL INFORMATION</legend>
+                <label for="part1item1">Item 1. Financial Statements.</label> 
+                <textarea class="w3-input w3-block" rows="5" id="part1item1"></textarea>
+                <label for="part1item2">Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations</label>
+                <textarea class="w3-input w3-block" rows="5" id="part1item2"></textarea>
+                <label for="part1item3">Item 3. Quantitative and Qualitative Disclosures</label>
+                <textarea class="w3-input w3-block" rows="5" id="part1item3"></textarea>
+                <label for="part1item">Item 4. Controls and Procedures.</label>
+                <textarea class="w3-input w3-block" rows="5" id="part1item4"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>PART II — OTHER INFORMATION</legend>
+                <label for="part2item1">Item 1. Legal Proceedings.</label>
+                <textarea class="w3-input w3-block" rows="5" id="part2item1"></textarea>
+                <label for="part2item1a">Item 1A. Risk Factors</label>
+                <textarea class="w3-input w3-block" rows="5" id="part2item1a"></textarea>
+                <label for="part2item2">Item 2. Unregistered Sales of Equity Securities and Use of Proceeds.</label>
+                <textarea class="w3-input w3-block" rows="5" id="part2item2"></textarea>
+                <label for="part2item3">Item 3. Defaults Upon Senior Securities.</label>
+                <textarea class="w3-input w3-block" rows="5" id="part2item3"></textarea>
+                <label for="part2item4">Item 4. Mine Safety Disclosures.</label>
+                <textarea class="w3-input w3-block" rows="5" id="part2item4"></textarea>
+                <label for="part2item5">Item 5. Other Information.</label>
+                <textarea class="w3-input w3-block" rows="5" id="part2item5"></textarea>
+                <label for="part2item6">Item 6. Exhibits.</label>
+                <textarea class="w3-input w3-block" rows="5" id="part2item6"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>SIGNATURES</legend>
+            </fieldset>
+            <button id="create-report" class="w3-button w3-block w3-black">Create Report</button>
+            <br/>
+            <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
+            <br/>
+            <a href="./index.html" class="w3-button w3-block w3-orange">Back</a>
+            <br/><br/><br/>
+        </div>
+        <!-- FOOTER -->
+        <h5 class="w3-container w3-yellow footer">
+            &copy; <span id="year"></span> by <a href="https://presspage-entertainment.biz" target="_system" style="text-decoration: none">PressPage Entertainment Inc</a> DBA <a href="https://redeecas.presspage-entertainment.biz" target="_system" style="text-decoration: none">RedeeCash</a>. All rights reserved.
+            &nbsp;<span id="version" class="w3-tiny"></span>
+        </h5>                       
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("version").innerHTML = 'Version ' + localStorage.getItem('version');
+
+                var year = new Date().getFullYear();
+                if (year > 2022) {
+                    document.getElementById("year").innerHTML = "2022-" + year;
+                } else {
+                    document.getElementById("year").innerHTML = year;
+                }
+            }
+
+            document.getElementById("amendment").addEventListener("change", function(e){
+                e.preventDefault();
+                if (this.value == "Yes") {
+                    document.getElementById("amendement_no_meta").style.display = "block";
+                } else {
+                    document.getElementById("amendement_no_meta").style.display = "none";
+                }
+                return false;
+            })
+
+            document.getElementById("create-report").addEventListener("click",function(e){
+                e.preventDefault();
+
+
+                var amendment_no = 0;
+                if (document.getElementById("amendment").value == "yes") {
+                    amendment_no = document,getElementById("amendment_no").value;
+                }
+
+                var securities = [];
+
+                var signatures = [];
+
+                var datefrom = document.getElementById("datefrom").value;
+                var cik = document.getElementById("cik").value;
+
+                var submission = {
+                    redeecashSubmission: {
+                        form: "quarterly",
+                        regulation: document.getElementById("regulation").value,
+                        rule: document.getElementById("rule").value,
+                        dates: {
+                            start: datefrom,
+                            end: document.getElementById("dateto").value
+                        },
+                        amendment: amendment_no,
+                        cik: cik,
+                        filenumber: document.getElementById("secfilenumber").value,
+                        registrant: document.getElementById("registrant").value,
+                        jurisdiction: document.getElementById("jurisdiction").value,
+                        fein: document.getElementById("fein").value,
+                        address: document.getElementById("address").value,
+                        zipcode: document.getElementById("zipcode").value,
+                        former: {
+                            name: document.getElementById("former-name").value,
+                            address: document.getElementById("former-address").value,
+                            fiscalyear: document.getElementById("former-fiscalyear").value,
+                        },
+                        securities: securities,
+                        shellcompany: document.getElementById("shellcompany").value,
+                        part1: {
+                            item1: document.getElementById("part1item1").value,
+                            item2: document.getElementById("part1item2").value,
+                            item3: document.getElementById("part1item3").value,
+                            item4: document.getElementById("part1item4").value,
+                        },
+                        part2: {
+                            item1: document.getElementById("part2item1").value,
+                            item1a: document.getElementById("part2item1a").value,
+                            item2: document.getElementById("part2item2").value,
+                            item3: document.getElementById("part2item3").value,
+                            item4: document.getElementById("part2item4").value,
+                            item5: document.getElementById("part2item5").value,
+                            item6: document.getElementById("part2item6").value
+                        },
+                        signatures: signatures
+                    }
+                };
+
+                var params = {
+                    form: "quarterly",
+                    cik: cik,
+                    date: new Date(datefrom).getTime(),
+                    json: JSON.stringify(submission)
+                };
+
+                SendIPC("create_submission_xml",params,function(channel,event,result){
+                    console.log(result);
+                })
+
+                return false;
+            })
+        </script>
+    </body>
+</html>

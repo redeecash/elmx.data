@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algorithmic Advisor Auditor Profile Submission</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <h2 class="w3-container w3-yellow header">Algorithmic Advisor Auditor Profile Submission</h2>
+        <!-- MAIN PAGE -->
+        <div id="main-page" class="w3-container">
+            <br/><br/><br/>
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label for="applicant-fullname">Full Name</label>
+                <input type="text" id="applicant-fullname" class="w3-input w3-block" value="" />
+                <label for="applicant-companyname">Company/Organization Name (if applicable)</label>
+                <input type="text" id="applicant-companyname" class="w3-input w3-block" value="" />
+                <label for="applicant-legalentity">Legal Entity Type (if applicable)</label>
+                <input type="text" id="applicant-legalentity" class="w3-input w3-block" value="" />
+                <label for="applicant-incorpdate">Incorporation Date (if applicable)</label>
+                <input type="text" id="applicant-incorpdate" class="w3-input w3-block" value="" />
+                <label for="applicant-address">Registered Address</label>
+                <input type="text" id="applicant-address" class="w3-input w3-block" value="" />
+                <label for="applicant-city">City</label>
+                <input type="text" id="applicant-city" class="w3-input w3-block" value="" />
+                <label for="applicant-state">State/Province</label>
+                <input type="text" id="applicant-state" class="w3-input w3-block" value="" />
+                <label for="applicant-zipcode">Postal/ZIP Code</label>
+                <input type="text" id="applicant-zipcode" class="w3-input w3-block" value="" />
+                <label for="applicant-country">Country</label>
+                <input type="text" id="applicant-country" class="w3-input w3-block" value="" />
+                <label for="applicant-phone">Phone Number</label>
+                <input type="text" id="applicant-phone" class="w3-input w3-block" value="" />
+                <label for="applicant-email">Email Address</label>
+                <input type="text" id="applicant-email" class="w3-input w3-block" value="" />
+                <label for="applicant-website">Company Website (if applicable)</label>
+                <input type="text" id="applicant-website" class="w3-input w3-block" value="" />
+            </fieldset>
+            <fieldset>
+                <legend>Registration Type</legend>
+                <label for="registration-type">Please select the appropriate registration type</label>
+                <select class="w3-input w3-block" id="registration-type">
+                    <option value="advisor">Algorithmic Advisor</option>
+                    <option value="auditor">Algorithmic Auditor</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Regulatory Compliance</legend>
+                <label for="regulatory-compliance">Have you obtained the necessary registrations from the U.S. Financial Industry Regulatory Authority (FINRA) as a CTA (Commodity Trading Advisor) or Broker-Dealer?</label>
+                <select class="w3-input w3-block" id="regulatory-compliance">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+                <label for="regulatory-compliance-information">If Yes, please provide the registration details</label>
+                <textarea id="regulatory-compliance-information" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Blockchain Courseware</legend>
+                <label for="courseware-completion">Have you completed the broker-dealer blockchain courseware</label>
+                <select class="w3-input w3-block" id="courseware-completion">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+                <label for="courseware-completion-information">If Yes, please provide details of the courseware completion</label>
+                <textarea id="courseware-completion-information" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Experience &amp; Qualifications</legend>
+                <label for="experience">Briefly describe your experience and qualifications in the field of algorithmic advisory and auditing</label>
+                <textarea id="experience" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Services Offered</legend>
+                <label for="services-offered">Describe the algorithmic advisory and auditing services you provide</label>
+                <textarea id="services-offered" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Compliance Procedures</legend>
+                <label for="compliance-procedures">Provide an overview of your compliance procedures and how you ensure compliance with applicable regulations and standards</label>
+                <textarea id="compliance-procedures" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Security Measures</legend>
+                <label for="security-measures">Describe the security measures implemented to safeguard client data and ensure the integrity of your algorithmic advisory and auditing processes</label>
+                <textarea id="security-measures" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Financial Information</legend>
+                <label for="financial-information">Provide information regarding your financial stability and resources available to support your algorithmic advisory and auditing operations</label>
+                <textarea id="financial-information" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="additional-information">Provide any additional information that you believe is relevant to your algorithmic advisor and auditor registration application</label>
+                <textarea id="additional-information" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <button id="create-submission-file" class="w3-button w3-block w3-black">Pay &amp; Submit</button>
+            <br/>
+            <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
+            <br/>
+            <a href="./index.html" class="w3-button w3-block w3-orange">Back</a>
+            <br/><br/><br/>
+        </div>
+        <!-- FOOTER -->
+        <h5 class="w3-container w3-yellow footer">
+            &copy; <span id="year"></span> by <a href="https://presspage-entertainment.biz" target="_system" style="text-decoration: none">PressPage Entertainment Inc</a> DBA <a href="https://redeecas.presspage-entertainment.biz" target="_system" style="text-decoration: none">RedeeCash</a>. All rights reserved.
+            &nbsp;<span id="version" class="w3-tiny"></span>
+        </h5>                       
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("version").innerHTML = 'Version ' + localStorage.getItem('version');
+
+                var year = new Date().getFullYear();
+                if (year > 2022) {
+                    document.getElementById("year").innerHTML = "2022-" + year;
+                } else {
+                    document.getElementById("year").innerHTML = year;
+                }
+            }
+            document.getElementById("create-submission-file").addEventListener("click", function(e) {
+                const info = {
+                    applicant: {
+                        fullname: document.getElementById("applicant-fullname").value,
+                        company: document.getElementById("applicant-companyname").value,
+                        legalentity: document.getElementById("applicant-legalentity").value,
+                        incorpdate: document.getElementById("applicant-incorpdate").value,
+                        address: document.getElementById("applicant-address").value,
+                        city: document.getElementById("applicant-city").value,
+                        state: document.getElementById("applicant-state").value,
+                        zipcode: document.getElementById("applicant-zipcode").value,
+                        country: document.getElementById("applicant-country").value,
+                        phone: document.getElementById("applicant-phone").value,
+                        email: document.getElementById("applicant-email").value,
+                        website: document.getElementById("applicant-website").value,
+                    },
+                    registration: document.getElementById("registration-type").value,
+                    regulatory: {
+                        compliance: document.getElementById("regulatory-compliance").value,
+                        information: document.getElementById("regulatory-compliance-information").value,
+                    },
+                    courseware: {
+                        completion: document.getElementById("courseware-completion").value,
+                        information: document.getElementById("courseware-completion-information").value,
+                    },
+                    experience: document.getElementById("experience").value,
+                    servies: document.getElementById("services-offered").value,
+                    procedures: document.getElementById("compliance-procedures").value,
+                    security: document.getElementById("security-measures").value,
+                    financial:document.getElementById("financial-information").value,
+                    additional: document.getElementById("additional-information").value,
+                }
+
+                const base64 = btoa(JSON.stringify(info));
+                const base64Name = btoa(document.getElementById("botinfo-name").value);
+
+                const url = `https://buy.stripe.com/aEU03tek47kOc6Y144?client_reference_id=${document.getElementById("applicant-fullname").value}`;
+                window.open(url);
+
+                const mailto = `mailto:presspage.entertainment@gmail.com?subject=Algorithmic Auditor:'${document.getElementById("applicant-fullname").value}'&body=${base64}`;
+                const win = window.open(mailto);
+                win.close();
+            })
+            document.getElementById("download-submission-file").addEventListener("click",function(e){
+                e.preventDefault();
+
+                const info = {
+                    applicant: {
+                        fullname: document.getElementById("applicant-fullname").value,
+                        company: document.getElementById("applicant-companyname").value,
+                        legalentity: document.getElementById("applicant-legalentity").value,
+                        incorpdate: document.getElementById("applicant-incorpdate").value,
+                        address: document.getElementById("applicant-address").value,
+                        city: document.getElementById("applicant-city").value,
+                        state: document.getElementById("applicant-state").value,
+                        zipcode: document.getElementById("applicant-zipcode").value,
+                        country: document.getElementById("applicant-country").value,
+                        phone: document.getElementById("applicant-phone").value,
+                        email: document.getElementById("applicant-email").value,
+                        website: document.getElementById("applicant-website").value,
+                    },
+                    registration: document.getElementById("registration-type").value,
+                    regulatory: {
+                        compliance: document.getElementById("regulatory-compliance").value,
+                        information: document.getElementById("regulatory-compliance-information").value,
+                    },
+                    courseware: {
+                        completion: document.getElementById("courseware-completion").value,
+                        information: document.getElementById("courseware-completion-information").value,
+                    },
+                    experience: document.getElementById("experience").value,
+                    servies: document.getElementById("services-offered").value,
+                    procedures: document.getElementById("compliance-procedures").value,
+                    security: document.getElementById("security-measures").value,
+                    financial:document.getElementById("financial-information").value,
+                    additional: document.getElementById("additional-information").value,
+                };
+
+                const regsitration_type = document.getElementById("registration-type").value;
+
+                var xmlString = `<?xml version="1.0" encoding="UTF-8"?>\n<algo${regsitration_type}>\n${convertToXml(info, '  ')}\n</algo${regsitration_type}>`;
+                const personalName = document.getElementById("applicant-fullname").value.toLowerCase().replace(/ /g, "_");
+                const filename = `${personalName}_${regsitration_type}.xml`;
+                download(xmlString,filename);
+            })
+        </script>
+    </body>
+</html>

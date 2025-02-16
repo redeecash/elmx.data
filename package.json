@@ -1,0 +1,72 @@
+{
+  "name": "reporting",
+  "version": "1.0.0",
+  "description": "Creating reporting files for submission at https://portal.exemptliquiditymarket.exchange",
+  "main": "index.js",
+  "build": {
+    "appId": "exchange.exemptliquiditymarket.reporting",
+    "buildVersion": "1",
+    "productName": "Exempt Liquidity Market Exchange Reporting",
+    "copyright": "Copyright © 2023 ${author}",
+    "win": {
+      "icon": "./assets/logo.ico",
+      "target": [
+        "nsis",
+        "appx"
+      ]
+    },
+    "linux": {
+      "target": "deb",
+      "icon": "./assets/logo.png",
+      "category": "Financial",
+      "synopsis": "Exempt Liquidity Market Exchange Reporting"
+    },
+    "mac": {
+      "category": "public.app-category.finance",
+      "icon": "./assets/logo.icns"
+    },
+    "dmg": {
+      "title": "${productName}_${version}",
+      "icon": "./assets/logo.icns",
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "files": [],
+    "extraFiles": []
+  },
+  "scripts": {
+    "start": "electron index.js",
+    "dist:mac": "electron-builder --mac --universal",
+    "dist:win": "electron-builder --win --universal",
+    "dist:snap": "snapcraft remote-build --build-on=amd64,arm64",
+    "png2icns": "./icns_creator.sh ./assets/logo.png ./assets/logo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redeecash/exchange.data"
+  },
+  "keywords": [],
+  "author": "PRESSPAGE ENTERTAINMENT INC dba PINGLEWARE <maintainers@pingleware.work>",
+  "license": "BSL-1.1",
+  "bugs": {
+    "url": "https://pingleware.support"
+  },
+  "homepage": "https://github.com/redeecash/exchange.data#readme",
+  "dependencies": {
+    "jsontoxml": "^1.0.1"
+  },
+  "devDependencies": {
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.3"
+  }
+}

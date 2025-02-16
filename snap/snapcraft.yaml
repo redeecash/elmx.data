@@ -1,0 +1,14 @@
+name: reporting
+base: core20
+version: '1.2.0'
+summary: Creating reporting files for submission at https://exemptliquiditymarket.exchange
+description: |
+  Creating reporting files for submission at https://exemptliquiditymarket.exchange
+
+grade: stable
+confinement: strict
+
+parts:
+  my-part:
+    # See 'snapcraft plugins'
+    plugin: nil

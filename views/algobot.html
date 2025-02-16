@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algorithmic Trading Bot Submssion</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <h2 class="w3-container w3-yellow header">Algorithmic Trading Bot Submssion</h2>
+        <!-- MAIN PAGE -->
+        <div id="main-page" class="w3-container">
+            <br/><br/><br/>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="personal-fullname">Full Name</label>
+                <input type="text" class="w3-input w3-block" id="personal-fullname" value="" /> 
+                <label for="personal-phone">Contact Number</label>   
+                <input type="text" class="w3-input w3-block" id="personal-phone" value="" /> 
+                <label for="personal-email">Email Address</label>   
+                <input type="email" class="w3-input w3-block" id="personal-email" value="" /> 
+                <label for="personal-website">Personal Website (if applicable)</label>   
+                <input type="url" class="w3-input w3-block" id="personal-website" value="" /> 
+                <label for="personal-linkedin">LinkedIn Profile (if applicable)</label>
+                <input type="url" class="w3-input w3-block" id="personal-linkedin" value="" /> 
+            </fieldset>
+            <fieldset>
+                <legend>Bot Information</legend>
+                <label for="botinfo-name">Bot Name</label>
+                <input type="text" class="w3-input w3-block" id="botinfo-name" value="" /> 
+                <label for="botinfo-description">Description of Bot Strategy</label>
+                <textarea type="text" class="w3-input w3-block" id="botinfo-description"></textarea> 
+                <label for="botinfo-language">Programming Language/Framework Used</label>
+                <input type="text" class="w3-input w3-block" id="botinfo-language" value="" /> 
+                <label for="botinfo-platform">Trading Platform(s) Supported</label>
+                <input type="text" class="w3-input w3-block" id="botinfo-platform" value="" /> 
+                <label for="botinfo-exchange">Exchange(s) Supported</label>
+                <input type="text" class="w3-input w3-block" id="botinfo-exchange" value="" /> 
+                <label for="botinfo-download">Bot Download Link</label>
+                <input type="text" class="w3-input w3-block" id="botinfo-download" value="" /> 
+                <label for="botinfo-cost">Bot Cost</label>
+                <select class="w3-input w3-block" id="botinfo-cost">
+                    <option value="free">Free</option>
+                    <option value="paid">Paid</option>
+                </select>
+                <label for="botinfo-price">Price, if paid?</label>
+                <input type="number" class="w3-input w3-block" id="botinfo-price" value="0.00" /> 
+            </fieldset>
+            <fieldset>
+                <legend>Technical Details</legend>
+                <label for="techinfo-hosting">Hosting Environment (Cloud, Local Server, etc.)</label>
+                <input type="text" class="w3-input w3-block" id="techinfo-hosting" value="" /> 
+                <label for="techinfo-api">Required API Access</label>
+                <input type="text" class="w3-input w3-block" id="techinfo-api" value="" /> 
+                <label for="techinfo-integration">Integration Method (REST, WebSockets, etc.)</label>
+                <input type="text" class="w3-input w3-block" id="techinfo-integration" value="" /> 
+                <label for="techinfo-marketdata">Market Data Usage (Real-time, Historical, etc.)</label>
+                <input type="text" class="w3-input w3-block" id="techinfo-marketdata" value="" /> 
+            </fieldset>
+            <fieldset>
+                <legend>Risk Management</legend>
+                <label for="risk-mechanism">Describe Your Bot's Risk Management Mechanisms</label>
+                <textarea id="risk-mechanism" class="w3-input w3-block" rows="5"></textarea>
+                <label for="risk-maxpertrade">Maximum Risk Per Trade (% or Amount)</label>
+                <input type="text" id="risk-maxpertrade" class="w3-input w3-block" value="" />
+                <label for="risk-strategies">Stop Loss and Take Profit Strategies</label>
+                <textarea id="risk-strategies" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Backtesting and Optimization</legend>
+                <label for="backtesting-period">Backtesting Period and Data Source</label>
+                <textarea id="backtesting-period" class="w3-input w3-block" rows="5"></textarea>
+                <label for="backtesting-performance">Performance Metrics</label>
+                <textarea id="backtesting-performance" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Compliance and Regulatory Requirements</legend>
+                <label for="compliance-regulations">Are You Familiar with Applicable Financial Regulations in Your Jurisdiction?</label>
+                <select id="compliance-regulations" class="w3-input w3-block">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+                <label for="compliance-measures">Have You Implemented any Compliance Measures to Ensure Regulatory Compliance?</label>
+                <select id="compliance-measures" class="w3-input w3-block">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+                <label for="compliance-details">Yes, Provide Details</label>
+                <textarea id="compliance-details" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Track Record</legend>
+                <label for="trackrecord-totaltrading">Total Trading Experience</label> 
+                <input type="text" id="trackrecord-totaltrading" class="w3-input w3-block" value="" />
+                <label for="trackrecord-livetrading">Live Trading Experience</label>
+                <input type="text" id="trackrecord-livetrading" class="w3-input w3-block" value="" />
+                <label for="trackrecord-summary">Performance Summary (if available)</label>
+                <textarea id="trackrecord-summary" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>References</legend>
+                <p>Provide any professional references who can vouch for your trading bot's performance and reliability</p>
+                <fieldset>
+                    <legend>Reference 1</legend>
+                    <label for="reference-one-fullname">Full Name</label>
+                    <input type="text" id="reference-one-fullname" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-title">Position/Title</label>   
+                    <input type="text" id="reference-one-title" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-company">Company/Organization</label>      
+                    <input type="text" id="reference-one-company" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-phone">Contact Number</label>     
+                    <input type="text" id="reference-one-phone" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-email">Email Address</label>   
+                    <input type="text" id="reference-one-email" class="w3-input w3-block" value="" />        
+                </fieldset>
+                <fieldset>
+                    <legend>Reference 2</legend>
+                    <label for="reference-two-fullname">Full Name</label>       
+                    <input type="text" id="reference-two-fullname" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-title">Position/Title</label>       
+                    <input type="text" id="reference-two-title" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-company">Company/Organization</label>       
+                    <input type="text" id="reference-two-company" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-phone">Contact Number</label>       
+                    <input type="text" id="reference-two-phone" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-email">Email Address</label>   
+                    <input type="text" id="reference-two-email" class="w3-input w3-block" value="" />    
+                </fieldset>
+                <label for="reference-consent">Consent to Publish References</label>
+                <input type="checkbox" id="reference-consent" class="w3-input">&nbsp;I give consent for my references to be contacted and their information to be made public for verification purposes
+            </fieldset>
+            <button id="create-submission-file" class="w3-button w3-block w3-black">Pay &amp; Submit</button>
+            <br/>
+            <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
+            <br/>
+            <a href="./index.html" class="w3-button w3-block w3-orange">Back</a>
+            <br/><br/><br/>
+        </div>
+        <!-- FOOTER -->
+        <h5 class="w3-container w3-yellow footer">
+            &copy; <span id="year"></span> by <a href="https://presspage-entertainment.biz" target="_system" style="text-decoration: none">PressPage Entertainment Inc</a> DBA <a href="https://redeecas.presspage-entertainment.biz" target="_system" style="text-decoration: none">RedeeCash</a>. All rights reserved.
+            &nbsp;<span id="version" class="w3-tiny"></span>
+        </h5>                       
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            var webdevencrypt = {
+                setEncrypt: function(plaintext, passcode) {
+                    return this.encryptCodes(plaintext, passcode);
+                },
+                setDecrypt: function(encrypted, passcode) {
+                    return this.decryptCodes(encrypted, passcode);
+                },
+                encryptCodes: function(content,passcode) {
+                    var result = []; var passLen = passcode.length ;
+                    for(var i = 0  ; i < content.length ; i++) {
+                        var passOffset = i%passLen ;
+                        var calAscii = (content.charCodeAt(i)+passcode.charCodeAt(passOffset));
+                        result.push(calAscii);
+                    }
+                    return JSON.stringify(result) ;
+                },
+                decryptCodes: function(content,passcode) {
+                    var result = [];var str = '';
+                    var codesArr = JSON.parse(content);var passLen = passcode.length ;
+                    for(var i = 0  ; i < codesArr.length ; i++) {
+                        var passOffset = i%passLen ;
+                        var calAscii = (codesArr[i]-passcode.charCodeAt(passOffset));
+                        result.push(calAscii) ;
+                    }
+                    for(var i = 0 ; i < result.length ; i++) {
+                        var ch = String.fromCharCode(result[i]); str += ch ;
+                    }
+                    return str ;
+                }
+            }; 
+
+            window.onload = function() {
+                document.getElementById("version").innerHTML = 'Version ' + localStorage.getItem('version');
+
+                var year = new Date().getFullYear();
+                if (year > 2022) {
+                    document.getElementById("year").innerHTML = "2022-" + year;
+                } else {
+                    document.getElementById("year").innerHTML = year;
+                }
+            }
+            document.getElementById("create-submission-file").addEventListener("click", function(e) {
+                const info = {
+                    personal: {
+                        fullname: document.getElementById("personal-fullname").value,
+                        phone: document.getElementById("personal-phone").value,
+                        email: document.getElementById("personal-email").value,
+                        website: document.getElementById("personal-website").value,
+                        linkedin: document.getElementById("personal-linkedin").value
+                    },
+                    botinfo: {
+                        name: document.getElementById("botinfo-name").value,
+                        description: document.getElementById("botinfo-description").value,
+                        language: document.getElementById("botinfo-language").value,
+                        platform: document.getElementById("botinfo-platform").value,
+                        exchange: document.getElementById("botinfo-exchange").value,
+                        download: document.getElementById("botinfo-download").value,
+                        cost: document.getElementById("botinfo-cost").value,
+                        price: document.getElementById("botinfo-price").value
+                    },
+                    techinfo: {
+                        hosting: document.getElementById("techinfo-hosting").value,
+                        api:  document.getElementById("techinfo-api").value,
+                        integration:  document.getElementById("techinfo-integration").value,
+                        marketdata:  document.getElementById("techinfo-marketdata").value
+                    },
+                    risk: {
+                        mechanism: document.getElementById("risk-mechanism").value,
+                        maxpertrade: document.getElementById("risk-maxpertrade").value,
+                        strategies: document.getElementById("risk-strategies").value
+                    },
+                    backtesting: {
+                        period: document.getElementById("backtesting-period").value,
+                        performance: document.getElementById("backtesting-performance").value
+                    },
+                    compliance: {
+                        regulations: document.getElementById("compliance-regulations").value,
+                        measures: document.getElementById("compliance-measures").value,
+                        details: document.getElementById("compliance-details").value
+                    },
+                    trackrecord: {
+                        totaltrading: document.getElementById("trackrecord-totaltrading").value,
+                        livetrading: document.getElementById("trackrecord-livetrading").value,
+                        summary: document.getElementById("trackrecord-summary").value
+                    },
+                    references: {
+                        one: {
+                            fullname:  document.getElementById("reference-one-fullname").value,
+                            title:  document.getElementById("reference-one-title").value,
+                            company:  document.getElementById("reference-one-company").value,
+                            phone:  document.getElementById("reference-one-phone").value,
+                            email:  document.getElementById("reference-one-email").value
+                        },
+                        two: {
+                            fullname:  document.getElementById("reference-two-fullname").value,
+                            title:  document.getElementById("reference-two-title").value,
+                            company:  document.getElementById("reference-two-company").value,
+                            phone:  document.getElementById("reference-two-phone").value,
+                            email:  document.getElementById("reference-two-email").value
+                        }
+                    }
+                }
+
+                const base64 = btoa(JSON.stringify(info));
+                const base64Name = btoa(document.getElementById("botinfo-name").value);
+
+                const url = `https://buy.stripe.com/aEU03tek47kOc6Y144?client_reference_id=${document.getElementById("botinfo-name").value}`;
+                window.open(url);
+
+                const mailto = `mailto:presspage.entertainment@gmail.com?subject='${document.getElementById("botinfo-name").value}'&body=${base64}`;
+                const win = window.open(mailto);
+                win.close();
+            })
+            document.getElementById("download-submission-file").addEventListener("click",function(e){
+                e.preventDefault();
+
+                var xmlString = `<?xml version="1.0" encoding="UTF-8"?>\n<algobot>\n${convertToXml(info, '  ')}\n</algobot>`;
+                const personalName = document.getElementById("personal-fullname").value.toLowerCase().replace(/ /g, "_");
+                const botName = document.getElementById("botinfo-name").value.toLowerCase().replace(/ /g, "_");
+                const filename = `${personalName}_${botName}.xml`;
+                download(xmlString,filename);
+            })
+        </script>
+    </body>
+</html>

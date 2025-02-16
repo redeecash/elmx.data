@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Contract Auditor Profile Submssion</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <h2 class="w3-container w3-yellow header">Smart Contract Auditor Profile Submssion</h2>
+        <!-- MAIN PAGE -->
+        <div id="main-page" class="w3-container">
+            <br/><br/><br/>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="personal-fullname">Full Name</label>
+                <input type="text" class="w3-input w3-block" id="personal-fullname" value="" /> 
+                <label for="personal-phone">Contact Number</label>   
+                <input type="text" class="w3-input w3-block" id="personal-phone" value="" /> 
+                <label for="personal-email">Email Address</label>   
+                <input type="email" class="w3-input w3-block" id="personal-email" value="" /> 
+                <label for="personal-website">Personal Website (if applicable)</label>   
+                <input type="url" class="w3-input w3-block" id="personal-website" value="" /> 
+                <label for="personal-linkedin">LinkedIn Profile (if applicable)</label>
+                <input type="url" class="w3-input w3-block" id="personal-linkedin" value="" /> 
+                <label for="personal-fiverr">Fiverr Profile (if applicable)</label>
+                <input type="url" class="w3-input w3-block" id="personal-fiverr" value="" /> 
+            </fieldset>
+            <fieldset>
+                <legend>Education &amp; Certification</legend>
+                <label for="education-highest">Highest Education Level Attained</label>
+                <input type="text" id="education-highest" class="w3-input w3-block" value="" />
+                <label for="education-degrees">Degrees and Certifications Related to Computer Science, Information Security, Blockchain, or Smart Contract Auditing</label>
+                <textarea id="education-degrees" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Professional Experience</legend>
+                <label for="professional-totalyears">Total Years</label>
+                <input type="number" id="professional-totalyears" class="w3-input w3-block" value="" />
+                <label for="professional-currentemployer">Current Employer/Company (if applicable)</label>
+                <input type="text" id="professional-currentemployer" class="w3-input w3-block" value="" />
+                <label>Previous Employers/Companies (List the most recent first)</label>
+                <fieldset>
+                    <legend>Most Recent</legend>
+                    <label for="professional-mostrecent-name">Company Name</label>
+                    <input type="text" id="professional-mostrecent-name" class="w3-input w3-block" value="" />
+                    <label for="professional-mostrecent-role">Position/Role</label> 
+                    <input type="text" id="professional-mostrecent-role" class="w3-input w3-block" value="" />
+                    <label for="professional-mostrecent-duration">Duration of Employment</label>
+                    <input type="text" id="professional-mostrecent-duration" class="w3-input w3-block" value="" />
+                </fieldset>
+                <fieldset>
+                    <legend>Next Recent</legend>
+                    <label for="professional-nextrecent-name">Company Name</label>
+                    <input type="text" id="professional-nextrecent-name" class="w3-input w3-block" value="" />
+                    <label for="professional-nextrecent-role">Position/Role</label> 
+                    <input type="text" id="professional-nextrecent-role" class="w3-input w3-block" value="" />
+                    <label for="professional-nextrecent-duration">Duration of Employment</label>
+                    <input type="text" id="professional-nextrecent-duration" class="w3-input w3-block" value="" />
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Smart Contract Auditing Experience</legend>
+                <label for="experience-auditing">Number of Smart Contract Audits Completed</label>
+                <input type="number" id="experience-auditing" class="w3-input w3-block" value="" />
+                <label for="experience-contracts">Types of Smart Contracts Audited (e.g., ERC-20, ERC-721, DeFi protocols)</label>
+                <textarea id="experience-contracts" class="w3-input w3-block" rows="5"></textarea>
+                <label for="experience-approach">Briefly Describe Your Approach to Smart Contract Auditing</label>
+                <textarea id="experience-approach" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Technical Skills</legend>
+                <label for="technical-languages">Programming Languages Familiarity (e.g., Solidity, Vyper)</label>
+                <textarea id="technical-languages" class="w3-input w3-block" rows="5"></textarea>
+                <label for="technical-platforms">Blockchain Platforms and Networks Experience (e.g., Ethereum, Binance Smart Chain)</label>
+                <textarea id="technical-platforms" class="w3-input w3-block" rows="5"></textarea>
+                <label for="technical-tools">Tools and Frameworks Used for Smart Contract Auditing</label>
+                <textarea id="technical-tools" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Auditing Process</legend>
+                <label>Do you personally perform the smart contract auditing duties or assign them to a team?</label>
+                <input type="checkbox" id="process-performallduties" class="w3-input w3-block">&nbsp;I personally perform all auditing duties
+                <input type="checkbox" id="process-assignallduties" class="w3-input w3-block">&nbsp;I assign auditing duties to a team
+            </fieldset>
+            <fieldset>
+                <legend>Noteworthy Projects and Achievements</legend>
+                <label for="achievements-projects">Highlight any significant smart contract auditing projects you have worked on</label>
+                <textarea id="achievements-projects" class="w3-input w3-block" rows="5"></textarea>
+                <label for="achievements-awards">Specify any awards, recognitions, or notable contributions in the field</label>
+                <textarea id="achievements-awards" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Publications and Presentations</legend>
+                <label for="publication-list">List any publications, research papers, or articles related to smart contract security or auditing that you have authored or co-authored</label>
+                <textarea id="publication-list" class="w3-input w3-block" rows="5"></textarea>
+                <label for="publication-details">Provide details of any presentations or speaking engagements you have delivered at conferences, seminars, or industry events</label>
+                <textarea id="publication-details" class="w3-input w3-block" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>References</legend>
+                <p>Provide any professional references who can vouch for your trading bot's performance and reliability</p>
+                <fieldset>
+                    <legend>Reference 1</legend>
+                    <label for="reference-one-fullname">Full Name</label>
+                    <input type="text" id="reference-one-fullname" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-title">Position/Title</label>   
+                    <input type="text" id="reference-one-title" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-company">Company/Organization</label>      
+                    <input type="text" id="reference-one-company" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-phone">Contact Number</label>     
+                    <input type="text" id="reference-one-phone" class="w3-input w3-block" value="" />    
+                    <label for="reference-one-email">Email Address</label>   
+                    <input type="text" id="reference-one-email" class="w3-input w3-block" value="" />        
+                </fieldset>
+                <fieldset>
+                    <legend>Reference 2</legend>
+                    <label for="reference-two-fullname">Full Name</label>       
+                    <input type="text" id="reference-two-fullname" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-title">Position/Title</label>       
+                    <input type="text" id="reference-two-title" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-company">Company/Organization</label>       
+                    <input type="text" id="reference-two-company" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-phone">Contact Number</label>       
+                    <input type="text" id="reference-two-phone" class="w3-input w3-block" value="" />    
+                    <label for="reference-two-email">Email Address</label>   
+                    <input type="text" id="reference-two-email" class="w3-input w3-block" value="" />    
+                </fieldset>
+                <label for="reference-consent">Consent to Publish References</label>
+                <input type="checkbox" id="reference-consent" class="w3-input">&nbsp;I give consent for my references to be contacted and their information to be made public for verification purposes
+            </fieldset>
+            <button id="create-submission-file" class="w3-button w3-block w3-black">Pay &amp; Submit</button>
+            <br/>
+            <button id="download-submission-file" class="w3-button w3-block w3-blue">Download</button>
+            <br/>
+            <a href="./index.html" class="w3-button w3-block w3-orange">Back</a>
+            <br/><br/><br/>
+        </div>
+        <!-- FOOTER -->
+        <h5 class="w3-container w3-yellow footer">
+            &copy; <span id="year"></span> by <a href="https://presspage-entertainment.biz" target="_system" style="text-decoration: none">PressPage Entertainment Inc</a> DBA <a href="https://redeecas.presspage-entertainment.biz" target="_system" style="text-decoration: none">RedeeCash</a>. All rights reserved.
+            &nbsp;<span id="version" class="w3-tiny"></span>
+        </h5>                       
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("version").innerHTML = 'Version ' + localStorage.getItem('version');
+
+                var year = new Date().getFullYear();
+                if (year > 2022) {
+                    document.getElementById("year").innerHTML = "2022-" + year;
+                } else {
+                    document.getElementById("year").innerHTML = year;
+                }
+            }
+            document.getElementById("create-submission-file").addEventListener("click", function(e) {
+                const info = {
+                    personal: {
+                        fullname: document.getElementById("personal-fullname").value,
+                        phone: document.getElementById("personal-phone").value,
+                        email: document.getElementById("personal-email").value,
+                        website: document.getElementById("personal-website").value,
+                        linkedin: document.getElementById("personal-linkedin").value,
+                        fiverr: document.getElementById("personal-fiverr").value
+                    },
+                    education: {
+                        highest: document.getElementById("education-highest").value,
+                        degrees: document.getElementById("education-degrees").value
+                    },
+                    professional: {
+                        totalyears: document.getElementById("professional-totalyears").value,
+                        currentemployer: document.getElementById("professional-currentemployer").value,
+                        mostrecent: {
+                            name: document.getElementById("professional-mostrecent-name").value,
+                            role: document.getElementById("professional-mostrecent-role").value,
+                            duration: document.getElementById("professional-mostrecent-duration").value
+                        },
+                        nextrecent: {
+                            name: document.getElementById("professional-nextrecent-name").value,
+                            role: document.getElementById("professional-nextrecent-role").value,
+                            duration: document.getElementById("professional-nextrecent-duration").value
+                        }
+                    },
+                    experience: {
+                        auditing: document.getElementById("experience-auditing").value,
+                        contracts: document.getElementById("experience-contracts").value,
+                        approach: document.getElementById("experience-approach").value
+                    },
+                    technical: {
+                        languages: document.getElementById("technical-languages").value,
+                        platforms: document.getElementById("technical-platforms").value,
+                        tools: document.getElementById("technical-tools").value
+                    },
+                    process: {
+                        perform: document.getElementById("process-performallduties").value, 
+                        assign: document.getElementById("process-assignallduties").value
+                    },
+                    achievements: {
+                        projects: document.getElementById("achievements-projects").value,
+                        awards: document.getElementById("achievements-awards").value
+                    },
+                    publications: {
+                        list: document.getElementById("publication-list").value,
+                        details: document.getElementById("publication-details").value
+                    },
+                    references: {
+                        one: {
+                            fullname:  document.getElementById("reference-one-fullname").value,
+                            title:  document.getElementById("reference-one-title").value,
+                            company:  document.getElementById("reference-one-company").value,
+                            phone:  document.getElementById("reference-one-phone").value,
+                            email:  document.getElementById("reference-one-email").value
+                        },
+                        two: {
+                            fullname:  document.getElementById("reference-two-fullname").value,
+                            title:  document.getElementById("reference-two-title").value,
+                            company:  document.getElementById("reference-two-company").value,
+                            phone:  document.getElementById("reference-two-phone").value,
+                            email:  document.getElementById("reference-two-email").value
+                        }
+                    }
+                }
+
+                const base64 = btoa(JSON.stringify(info));
+                const base64Name = btoa(document.getElementById("personal-email").value);
+
+                const url = `https://buy.stripe.com/test_8wM8wEgTs1nBfRK6op?client_reference_id=${document.getElementById("personal-email").value}`;
+                window.open(url);
+
+                const mailto = `mailto:presspage.entertainment@gmail.com?subject='Smart Contract Auditor:${document.getElementById("personal-email").value}'&body=${base64}`;
+                const win = window.open(mailto);
+                win.close();
+            })
+            document.getElementById("download-submission-file").addEventListener("click",function(e){
+                e.preventDefault();
+
+                const info = {
+                    personal: {
+                        fullname: document.getElementById("personal-fullname").value,
+                        phone: document.getElementById("personal-phone").value,
+                        email: document.getElementById("personal-email").value,
+                        website: document.getElementById("personal-website").value,
+                        linkedin: document.getElementById("personal-linkedin").value,
+                        fiverr: document.getElementById("personal-fiverr").value
+                    },
+                    education: {
+                        highest: document.getElementById("education-highest").value,
+                        degrees: document.getElementById("education-degrees").value
+                    },
+                    professional: {
+                        totalyears: document.getElementById("professional-totalyears").value,
+                        currentemployer: document.getElementById("professional-currentemployer").value,
+                        mostrecent: {
+                            name: document.getElementById("professional-mostrecent-name").value,
+                            role: document.getElementById("professional-mostrecent-role").value,
+                            duration: document.getElementById("professional-mostrecent-duration").value
+                        },
+                        nextrecent: {
+                            name: document.getElementById("professional-nextrecent-name").value,
+                            role: document.getElementById("professional-nextrecent-role").value,
+                            duration: document.getElementById("professional-nextrecent-duration").value
+                        }
+                    },
+                    experience: {
+                        auditing: document.getElementById("experience-auditing").value,
+                        contracts: document.getElementById("experience-contracts").value,
+                        approach: document.getElementById("experience-approach").value
+                    },
+                    technical: {
+                        languages: document.getElementById("technical-languages").value,
+                        platforms: document.getElementById("technical-platforms").value,
+                        tools: document.getElementById("technical-tools").value
+                    },
+                    process: {
+                        perform: document.getElementById("process-performallduties").value, 
+                        assign: document.getElementById("process-assignallduties").value
+                    },
+                    achievements: {
+                        projects: document.getElementById("achievements-projects").value,
+                        awards: document.getElementById("achievements-awards").value
+                    },
+                    publications: {
+                        list: document.getElementById("publication-list").value,
+                        details: document.getElementById("publication-details").value
+                    },
+                    references: {
+                        one: {
+                            fullname:  document.getElementById("reference-one-fullname").value,
+                            title:  document.getElementById("reference-one-title").value,
+                            company:  document.getElementById("reference-one-company").value,
+                            phone:  document.getElementById("reference-one-phone").value,
+                            email:  document.getElementById("reference-one-email").value
+                        },
+                        two: {
+                            fullname:  document.getElementById("reference-two-fullname").value,
+                            title:  document.getElementById("reference-two-title").value,
+                            company:  document.getElementById("reference-two-company").value,
+                            phone:  document.getElementById("reference-two-phone").value,
+                            email:  document.getElementById("reference-two-email").value
+                        }
+                    }
+                }
+
+
+                var xmlString = `<?xml version="1.0" encoding="UTF-8"?>\n<smartcontractauditor>\n${convertToXml(info, '  ')}\n</smartcontractauditor>`;
+                const personalName = document.getElementById("personal-fullname").value.toLowerCase().replace(/ /g, "_");
+                const filename = `${personalName}_smartcontract_auditor.xml`;
+                download(xmlString,filename);
+            })
+        </script>
+    </body>
+</html>
