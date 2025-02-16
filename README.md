@@ -48,16 +48,17 @@ In accordance with 78l(b)(1) the following minimum information is required from 
 
     (A) the organization, financial structure, and nature of the business;
 
-    (B) the terms, position, rights, and privileges of the different classes of securities outstanding;
+    (B) the terms, position, rights, and privileges of the different classes of securities 
+    outstanding;
 
-    (C) the terms on which their securities are to be, and during the preceding three years have been, 
-    offered to the public or otherwise;
+    (C) the terms on which their securities are to be, and during the preceding three 
+    years have been, offered to the public or otherwise;
 
-    (D) the directors, officers, and underwriters, and each security holder of record holding more than 
-    10 per centum of any class of any equity security of the issuer (other than an exempted security), 
-    their remuneration and their interests in the securities of, and their material contracts with, 
-    the issuer and any person directly or indirectly controlling or controlled by, or under direct or 
-    indirect common control with, the issuer;
+    (D) the directors, officers, and underwriters, and each security holder of record holding
+    more than 10 per centum of any class of any equity security of the issuer 
+    (other than an exempted security), their remuneration and their interests in the securities 
+    of, and their material contracts with, the issuer and any person directly or indirectly 
+    controlling or controlled by, or under direct or indirect common control with, the issuer;
 
     (E) remuneration to others than directors and officers exceeding $20,000 per annum;
 
@@ -67,15 +68,18 @@ In accordance with 78l(b)(1) the following minimum information is required from 
 
     (H) options existing or to be created in respect of their securities;
 
-    (I) material contracts, not made in the ordinary course of business, which are to be executed in whole or 
-    in part at or after the filing of the application or which were made not more than two years before such filing, 
-    and every material patent or contract for a material patent right shall be deemed a material contract;
+    (I) material contracts, not made in the ordinary course of business, which are to be 
+    executed in whole or in part at or after the filing of the application or which were 
+    made not more than two years before such filing, and every material patent or contract 
+    for a material patent right shall be deemed a material contract;
 
-    (J)**NOT REQUIRED BUT RECOMMENDED**. balance sheets for not more than the three preceding fiscal years, 
-    certified if required by the rules and regulations of the Commission by a registered public accounting firm;
+    (J) balance sheets for not more than the three preceding fiscal years, certified if 
+    required by the rules and regulations of the Commission by a 
+    registered public accounting firm;
 
-    (K)**NOT REQUIRED BUT RECOMMENDED.** profit and loss statements for not more than the three preceding fiscal years, 
-    certified if required by the rules and regulations of the Commission by a registered public accounting firm; and
+    (K) profit and loss statements for not more than the three preceding fiscal years, 
+    certified if required by the rules and regulations of the Commission by a 
+    registered public accounting firm; and
 
-    (L)**NOT REQUIRED BUT RECOMMENDED**. any further financial statements which the Commission may deem necessary 
-    or appropriate for the protection of investors.
+    (L) any further financial statements which the Commission may deem necessary or 
+    appropriate for the protection of investors.
