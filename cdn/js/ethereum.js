@@ -52,7 +52,7 @@ async function changeNetwork() {
     const networks = {
             1: "ETHEREUM MAINNET",
             5: "GOERLI TESTNET",
-            59602: "REDEECASH EXCHANGE LOCALNET (TEST)"
+            59602: "Exempt Liquidity Market Exchange LOCALNET (TEST)"
         }
         window.ethereum.request({ method: 'net_version' })
         .then(networkId => {
